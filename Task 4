@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int numbers[10]={};
+    for(int i=1; i<=10; i++)
+    {
+        cout<<"Input number "<<i<<": ";
+        cin>>numbers[i];
+    }
+    cout<<"The order of array is: \t"<<endl;
+    for(int a=1; a<=10; a++)
+    {
+        cout<<numbers[a]<<" ";
+    }
+    cout<<"The reverse order of array is: \t"<<endl;
+    for(int j=10; j>=1; j--)
+    {
+        cout<<numbers[j]<<" ";
+    }
+}
