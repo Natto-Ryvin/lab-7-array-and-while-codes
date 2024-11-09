@@ -3,19 +3,24 @@ using namespace std;
 int main()
 {
     int numbers[10]={};
-    for(int i=1; i<=10; i++)
+    int i=1, j=1, k=10;
+    do
     {
         cout<<"Input number "<<i<<": ";
         cin>>numbers[i];
-    }
-    cout<<"The order of array is: \t"<<endl;
-    for(int a=1; a<=10; a++)
-    {
-        cout<<numbers[a]<<" ";
-    }
-    cout<<"The reverse order of array is: \t"<<endl;
-    for(int j=10; j>=1; j--)
+        i++;
+    } while (i<=10);
+    cout<<"The order of array is: "<<endl;
+    do
     {
         cout<<numbers[j]<<" ";
-    }
+        j++;
+    } while (j<=10);
+    cout<<"\nThe reverse order of array is: "<<endl;
+    do
+    {
+        cout<<numbers[k]<<" ";
+        k--;
+    } while (k>=1);
+    return 0;
 }
